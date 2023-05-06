@@ -1,73 +1,45 @@
-body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
-}
-
-h1, p {
-  margin: 1em auto;
+h1 {
   text-align: center;
 }
 
-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
 }
 
-fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
 }
 
-fieldset:last-of-type {
-  border-bottom: none;
+.cap {
+  width: 60px;
+  height: 25px;
 }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
 }
 
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
-  width: 100%;
-  min-height: 2em;
+.cap, .sleeve {
+  display: inline-block;
 }
 
-input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC;
 }
 
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
-  min-width: 300px;
-}
-
-input[type="file"] {
-  padding: 1px 2px;
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 blue;
 }
